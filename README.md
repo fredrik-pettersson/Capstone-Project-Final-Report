@@ -38,6 +38,9 @@ The following 35 numerical features and the target feature 'winner' were develop
 
 The below 15 numerical features along with the target feature 'winner' were used in the reduced feature data set:
 
+![feature data sets](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/acdf410c-4daf-41a8-8c18-5d74451d161d)
+
+
 ![reduced feature set](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/29196028-5617-45c0-820c-9d79bcaff883)
 
 
