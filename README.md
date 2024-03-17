@@ -31,6 +31,9 @@ The methods I use for answering my questions include common data science practic
 
 The following 35 numerical features and the target feature 'winner' were developed from the original ATP match dataset:
 
+![full feature set2](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/cf0aba4f-a452-4785-bd17-72e3f96e9b31)
+
+
 ![full feature set](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/127afa77-dd6c-4904-b61e-0277500f8a76)
 
 The below 15 numerical features along with the target feature 'winner' were used in the reduced feature data set:
