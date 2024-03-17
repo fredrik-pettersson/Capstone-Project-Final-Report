@@ -45,10 +45,14 @@ I found that the strongest predictors that differentiate winners from losers inc
 
 
 
-
-bpLostPerct 1stWonPerct
-
 Other characteristics such as age of the players and duration of the matches did not seem to have any significant impact on the match outcomes (see charts below):
+
+![winner age vs loser age](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/ad1038ca-7390-4c2d-8350-15153ad8504e)
+
+![winner age vs minutes2](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/3d24254b-d2bb-4a8b-b922-f18dece7bf9b)
+
+![winner age vs minutes](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/4062319a-17a3-47d8-a264-6d4acb20c30e)
+
 
 winner age vs loser age winner age vs minutes2 winner age vs minutes
 
