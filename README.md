@@ -29,19 +29,10 @@ The data used for this study is the the Kaggle ATP Matches dataset that contains
 # Methodology
 The methods I use for answering my questions include common data science practices and visualization techniques using Python programming and Panda dataframe manipulations as well as common machine learning models such as Logistic Regression, K-Nearest Neighbors, Decision Tree Classifiers, Support Vector Machines, Random Forests, Neural Networks, and the GridSearchCV function to optimize the choice of hypermodel parameters to get the best prediction performance.
 
-The following 35 numerical features and the target feature 'winner' were developed from the original ATP match dataset:
-
-![full feature set2](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/cf0aba4f-a452-4785-bd17-72e3f96e9b31)
-
-
-![full feature set](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/127afa77-dd6c-4904-b61e-0277500f8a76)
-
-The below 15 numerical features along with the target feature 'winner' were used in the reduced feature data set:
+The full feature data set with 35 numerical features and the reduced data set with 15 numerical features along with the target feature 'winner' were developed from the original ATP match dataset:
 
 ![feature data sets](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/acdf410c-4daf-41a8-8c18-5d74451d161d)
 
-
-![reduced feature set](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/29196028-5617-45c0-820c-9d79bcaff883)
 
 
 # Results
