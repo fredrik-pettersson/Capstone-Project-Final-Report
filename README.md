@@ -41,7 +41,8 @@ The full feature data set with 35 numerical features and the reduced data set wi
 I found that the strongest predictors that differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022 (see charts below with winning player on x-axis and losing player on y-axis): 
 ![bpLostPerct](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/d413ee9b-c65a-4b39-ae2a-f9ef6300d003)
 
-![1stWon](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/ae944076-3c2b-4947-b996-3cd88882f123)
+![w_1stWon vs l_1stWon](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/5f53c678-1ea5-47e5-8fa6-367b78d7dacf)
+
 
 
 bpLostPerct 1stWonPerct
