@@ -30,8 +30,9 @@ The data used for this study is the the Kaggle ATP Matches dataset that contains
 The methods I use for answering my questions include common data science practices and visualization techniques using Python programming and Panda dataframe manipulations as well as common machine learning models such as Logistic Regression, K-Nearest Neighbors, Decision Tree Classifiers, Support Vector Machines, Random Forests, Neural Networks, and the GridSearchCV function to optimize the choice of hypermodel parameters to get the best prediction performance.
 
 The following 35 numerical features and the target feature 'winner' were developed from the original ATP match dataset:
-
+<div style="width: 60%; height: 60%">
 ![full feature set](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/127afa77-dd6c-4904-b61e-0277500f8a76)
+</div>
 
 
 # Results
