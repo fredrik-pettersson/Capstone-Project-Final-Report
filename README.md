@@ -1,17 +1,19 @@
 # Capstone-Project-Final-Report
-Final Report and Exploratory Data Analyss for UC Berkeley Professional Certificate of ML and AI course August 2023 to March 2024
+Capstone Project Final Report and Exploratory Data Analys for UC Berkeley Professional Certificate of ML and AI course, August 2023 to March 2024
 
-## What are the key characteristics of tennis players who win, especially in very close matches that last for five sets?
+## What are the key characteristics of tennis players who win, especially in very close matches that last for five sets? How accurately can professional tennis match outcomes be predicted using match statistics?
 Fredrik Pettersson
 
 # Executive Summary
 Match statistics from 30,000 professional single men's ATP tennis matches played between 2010 and 2022 were analyzed to understand what the key predictors of winning players are, particularly during close five set matches.
 
-It was found that the strongest predictors that differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022.
+It was found that the strongest predictors which differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022.
 
-In addition, four different machine learning models, Logistic Regression, K-Nearest Neighbors (KNN), Decision Trees, and Support Vector Machines (SVM), were trained and evaluated on the full dataset containing 35 different kinds of match statistics as well as a reduced dataset that only contains those features that are available before the match is played.
+In addition, six different machine learning models, Logistic Regression, K-Nearest Neighbor (KNN), Decision Trees, Support Vector Machines (SVM), Random Forest, and Neural Networks were trained and evaluated on the full dataset containing 35 different kinds of match statistics as well as a reduced dataset of 16 features that only contains information that is available before the match is played.
 
-It was found that the Decision Tree Classifier performed by far the best with a prediction accuracy score of 0.92 on the full dataset.
+It was found that the Decision Tree Classifier generally performed very well with a prediction accuracy score of 0.92 (using validation data) on the full set of features against the baseline model of 0.66, which simply assumes that the highest ranked player wins. Also, by training a model specifically for a certain player, such as Novak Djokovic, it was found that prediction performance can be significantly enhanced to 99% accuracy with the Decision Tree model, compared to 84% with the baseline model, for the full dataset involving all match statistics. 
+
+However, predicting match outcome on the reduced dataset, that only contains information available before the match is played, is significanlty more difficult. The Random Forest model performed the best at 89% accuracy on a model trained specifically on the matches played by Novak Djokovic compared to the baseline model performance of 84%. Also, the neural network and SVM models performed relatively well at 88% and 87% accuracy, respectively. 
 
 # Rationale
 I expect to extract insights on what features and aspects of the game contribute the most to winning tennis matches to inform how we practice and prepare for matches.
@@ -19,17 +21,18 @@ I expect to extract insights on what features and aspects of the game contribute
 My research question is important as tennis is a very large sport that is played by not only professionals, but also millions of amateurs worldwide who spend billions of dollars trying to improve their games and win local competitions.
 
 # Research Question
-The research question is to understand what the key characteristics and predictors are of tennis players who win, especially in very close matches that last for five sets. Also, I would like to explore whether it is possible to create a machine learning model that is better at predicting the winner than simply using the official ATP ranking, which is the baseline performance measure.
+The research question is to understand what the key characteristics and predictors are of tennis players who win, especially in very close matches that last for five sets. Also, I would like to explore whether it is possible to create a machine learning model that is better at predicting the winner than simply using the official ATP ranking, which is used as the baseline performance measure.
 
 # Data Sources
 The data used for this study is the the Kaggle ATP Matches dataset that contains details about all the ATP tennis matches played since 1968 with detailed match statistics available for matches since 1991 ATP matches (available at https://www.kaggle.com/datasets/sijovm/atpdata/data).
 
 # Methodology
-The methods I use for answering my questions include common data science practices and visualization techniques using Python programming and Panda dataframe manipulations as well as common machine learning models such as Logistic Regression, K-Nearest Neighbors, Decision Tree Classifiers, Support Vector Machines, and the GridSearchCV function to optimize the choice of hypermodel parameters to get the best prediction performance.
+The methods I use for answering my questions include common data science practices and visualization techniques using Python programming and Panda dataframe manipulations as well as common machine learning models such as Logistic Regression, K-Nearest Neighbors, Decision Tree Classifiers, Support Vector Machines, Random Forests, Neural Networks, and the GridSearchCV function to optimize the choice of hypermodel parameters to get the best prediction performance.
 
 The following 35 numerical features and the target feature 'winner' were developed from the original ATP match dataset:
 
-image
+![full feature set](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/127afa77-dd6c-4904-b61e-0277500f8a76)
+
 
 # Results
 I found that the strongest predictors that differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022 (see charts below with winning player on x-axis and losing player on y-axis): bpLostPerct 1stWonPerct
