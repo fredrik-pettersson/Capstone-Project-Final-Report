@@ -1,8 +1,8 @@
 # Capstone-Project-Final-Report
 Capstone Project Final Report and Exploratory Data Analys for UC Berkeley Professional Certificate of ML and AI course, August 2023 to March 2024
 
-## What are the key characteristics of tennis players who win, especially in very close matches that last for five sets? 
-## How accurately can professional tennis match outcomes be predicted using match statistics?
+## (1) What are the key characteristics of tennis players who win, especially in very close matches that last for five sets? 
+## (2) How accurately can professional tennis match outcomes be predicted using match statistics?
 Fredrik Pettersson
 
 # Executive Summary
