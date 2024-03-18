@@ -70,7 +70,7 @@ It is worth pointing out that none of the other models (Logistic Regression, KNN
 ![phase 1 results 2](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/72270457-7d18-4eb0-b4e3-dc31bb48d8e1)
 
 
-The prediction performance results of the above models on the reduced dataset that only contains match data that is known BEFORE the match were not able to exceed the baseline performance. In this case, the Logistic Regression, Decision Tree, and SVM models performed about the same at around 0.66 even after hypermodel parameter optimization using GridSearchCV (see table below):
+The prediction performance results of the above models on the reduced dataset that only contains match data that is known BEFORE the match were not able to exceed the baseline performance. In this case, the Logistic Regression, Decision Tree, and SVM models performed about the same at around 0.66 even after hypermodel parameter optimization using GridSearchCV for the dataset containing all matches played by all players (see table below):
 
 ![phase 1 reduced dataset](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/eee2aec2-03f1-439e-8142-3a3819126dec)
 
@@ -80,11 +80,6 @@ In Phase 2, the Random Forest model performed the best on the reduced feature da
 
 ![phase 2 results best](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/e13efee1-27bf-4436-ad7e-a05142250142)
 
-
-
-One surprise was that the attempt to improve the performance of the reduced feature set with binary dummy encoding of opponents actually resulted in poorer performance with none of the models able to exceed the baseline model:
-
-![phase2 results](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/8b6e4066-0352-4ce6-b666-dc60a6054b12)
 
 
 ## Next Steps
