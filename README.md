@@ -14,7 +14,7 @@ In addition, six different machine learning models, Logistic Regression, K-Neare
 
 It was found that the Decision Tree Classifier generally performed very well with a prediction accuracy score of 0.92 (using validation data) on the full set of features against the baseline model of 0.66, which simply assumes that the highest ranked player wins. Also, by training a model specifically for a certain player, such as Novak Djokovic, it was found that prediction performance can be significantly enhanced to 99% accuracy with the Decision Tree model, compared to 84% with the baseline model, for the full dataset involving all match statistics. 
 
-However, predicting match outcome on the reduced dataset, that only contains information available before the match is played, is significanlty more difficult. The Random Forest model performed the best at 89% accuracy on a model trained specifically on the matches played by Novak Djokovic compared to the baseline model performance of 84%. Also, the neural network and SVM models performed relatively well at 88% and 87% accuracy, respectively. 
+However, predicting match outcome on the reduced dataset, that only contains information available before the match is played, is significantly more difficult. The Random Forest model performed the best at 89% accuracy on a model trained specifically on the matches played by Novak Djokovic compared to the baseline model performance of 84%. Also, the neural network and SVM models performed relatively well at 88% and 87% accuracy, respectively. 
 
 # Rationale
 I expect to extract insights on what features and aspects of the game contribute the most to winning tennis matches to inform how we practice and prepare for matches.
@@ -39,12 +39,12 @@ The full feature data set with 35 numerical features and the reduced data set wi
 
 The data analysis was done in two phases. In the first phase, the predictive performance of Logistic Regression, KNN, Decision Tree, and SVM models were evaluated against the full and reduced feature sets. Hypermodel optimization with GridSearchCV was applied on the more challenging reduced feature set in an attempt to improve the performance. Models were trained both for the general case involving matches with all ATP players and for the special case of matches only played by a certain player such as Novak Djokovic. The Python code for the first phase is available in the file "Capstone Project Fredrik Pettersson 021824d.ipynb" located in the repository "Capstone Project Initial Report". 
 
-In the second phase, two additional methods, Random Forest and Neural Networks, were introduced in an attempt to improve the prediction performance of the reduced feature set applied to a dataset specifically containing 747 matches played by Novak Djokovic during 2010 to 2022. In an attempt to further improve the accuracy, all the 206 opponents that Djokovic faced were binary encoded using dummy variables, which increased the total number of features to 220. The Python code for the second phase is availabe in the file "Capstone Project Fredrik Pettersson 031324.ipynb".    
+In the second phase, two additional methods, Random Forest and Neural Networks, were introduced in an attempt to improve the prediction performance of the reduced feature set applied to a dataset specifically containing 747 matches played by Novak Djokovic during 2010 to 2022. In an attempt to further improve the accuracy, all the 206 opponents that Djokovic faced were binary encoded using dummy variables, which increased the total number of features to 220. The Python code for the second phase is availabe in the file "Capstone Project Fredrik Pettersson 031324a.ipynb".    
 
 
 
 # Results
-I found that the strongest predictors that differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022.
+I found that the strongest predictors that differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning points as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1,105 five-set matches played between 2010 and 2022.
 
 The charts below show the winning player on x-axis and losing player on y-axis. In the first chart, the percentage of breakpoints lost is skewed with the loser having a higher percentage of break points lost than the winner. Similarly, the second chart shows how the percentage of first serve points won is skewed towards the winner: 
 
@@ -78,7 +78,7 @@ The prediction performance results of the above models on the reduced dataset th
 
 
 
-In Phase 2, the Random Forest model performed the best on the reduced feature dataset for matches specifically played by Novak Djokovic. The accuracy was 89% against the baseline accuracy of 84%. The Neural Network (one hidden layer with 50 nodes) and SVM models also performed well with accuracies of 88% and 87% respectively:
+In Phase 2, the Random Forest model performed the best on the reduced feature dataset for matches specifically played by Novak Djokovic. The accuracy was 89% against the baseline accuracy of 84%. The Neural Network and SVM models also performed well with accuracies of 88% and 87% respectively. The neural network that performed the best was found to be a relatively simple one consisting of only one hidden layer with 50 nodes:
 
 ![phase 2 results best](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/e13efee1-27bf-4436-ad7e-a05142250142)
 
