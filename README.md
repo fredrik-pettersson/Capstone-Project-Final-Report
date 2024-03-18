@@ -1,11 +1,12 @@
 # Capstone-Project-Final-Report
 Capstone Project Final Report and Exploratory Data Analys for UC Berkeley Professional Certificate of ML and AI course, August 2023 to March 2024
 
-## What are the key characteristics of tennis players who win, especially in very close matches that last for five sets? How accurately can professional tennis match outcomes be predicted using match statistics?
+## What are the key characteristics of tennis players who win, especially in very close matches that last for five sets? 
+## How accurately can professional tennis match outcomes be predicted using match statistics?
 Fredrik Pettersson
 
 # Executive Summary
-Match statistics from 30,000 professional single men's ATP tennis matches played between 2010 and 2022 were analyzed to understand what the key predictors of winning players are, particularly during close five set matches.
+Match statistics from about 30,000 professional single men's ATP tennis matches played between 2010 and 2022 were analyzed to understand what the key predictors of winning players are, particularly during close five set matches.
 
 It was found that the strongest predictors which differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022.
 
@@ -33,9 +34,10 @@ The full feature data set with 35 numerical features and the reduced data set wi
 
 
 
+
 ![feature data sets](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/acdf410c-4daf-41a8-8c18-5d74451d161d)
 
-The data analysis was done in two phases. In the first phase, the predictive performance of Logistic Regression, KNN, Decision Tree, and SVM models were evaluated against the full and reduced feature sets. Hypermodel optimization with GridSearchCV was applied on the more challenging reduced feature set in an attempt to improve the performance. Models were trained both for the general case involving matches with all ATP players and for the special case of matches only played by a certain player such as Novak Djokovic. The Python code for the first phase is available in the file "Capstone Project Fredrik Pettersson 021824d.ipynb". 
+The data analysis was done in two phases. In the first phase, the predictive performance of Logistic Regression, KNN, Decision Tree, and SVM models were evaluated against the full and reduced feature sets. Hypermodel optimization with GridSearchCV was applied on the more challenging reduced feature set in an attempt to improve the performance. Models were trained both for the general case involving matches with all ATP players and for the special case of matches only played by a certain player such as Novak Djokovic. The Python code for the first phase is available in the file "Capstone Project Fredrik Pettersson 021824d.ipynb" located in the repository "Capstone Project Initial Report". 
 
 In the second phase, two additional methods, Random Forest and Neural Networks, were introduced in an attempt to improve the prediction performance of the reduced feature set applied to a dataset specifically containing 747 matches played by Novak Djokovic during 2010 to 2022. In an attempt to further improve the accuracy, all the 206 opponents that Djokovic faced were binary encoded using dummy variables, which increased the total number of features to 220. The Python code for the second phase is availabe in the file "Capstone Project Fredrik Pettersson 031324.ipynb".    
 
@@ -76,14 +78,14 @@ The prediction performance results of the above models on the reduced dataset th
 
 
 
-In Phase 2, the Random Forest model performed the best on the reduced feature dataset on the matches specifically played by Novak Djokovic. The accuracy was 89% against the baseline accuracy of 84%. The Neural Network (one hidden layer with 50 nodes) and SVM models also performed well with accuracies of 88% and 87% respectively:
+In Phase 2, the Random Forest model performed the best on the reduced feature dataset for matches specifically played by Novak Djokovic. The accuracy was 89% against the baseline accuracy of 84%. The Neural Network (one hidden layer with 50 nodes) and SVM models also performed well with accuracies of 88% and 87% respectively:
 
 ![phase 2 results best](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/e13efee1-27bf-4436-ad7e-a05142250142)
 
 
 
 ## Next Steps
-One area to explore is to try to further improve the prediction performace of the reduced feature set by training a model on a smaller subset of matches, such as those of the top 15 players that Novak Djokovic has faced, rather than all the 200+ opponents he has played in the last decade. I would also consider time series methods as an alternative method to consider. 
+One area to explore is to try to further improve the prediction performace of the reduced feature set by training a model on a smaller subset of matches, such as those of the top 15 players that Novak Djokovic has faced, rather than all the 200+ opponents he has played in the last decade. I would also consider time series methods as an alternative approach to consider. 
 
 Contact and Further Information:
 Fredrik Pettersson, fc.pettersson@gmail.com
