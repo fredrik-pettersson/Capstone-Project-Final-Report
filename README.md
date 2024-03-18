@@ -8,9 +8,9 @@ Fredrik Pettersson
 # Executive Summary
 Match statistics from about 30,000 professional single men's ATP tennis matches played between 2010 and 2022 were analyzed to understand what the key predictors of winning players are, particularly during close five set matches.
 
-It was found that the strongest predictors which differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022.
+It was found that the strongest predictors which differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1,105 five-set matches played between 2010 and 2022.
 
-In addition, six different machine learning models, Logistic Regression, K-Nearest Neighbor (KNN), Decision Trees, Support Vector Machines (SVM), Random Forest, and Neural Networks were trained and evaluated on the full dataset containing 35 different kinds of match statistics as well as a reduced dataset of 16 features that only contains information that is available before the match is played.
+In addition, six different machine learning models, Logistic Regression, K-Nearest Neighbor (KNN), Decision Trees, Support Vector Machines (SVM), Random Forest, and Neural Networks were trained and evaluated on the full dataset containing 35 different kinds of match statistics as well as a reduced dataset of 15 features that only contains information that is available before the match is played.
 
 It was found that the Decision Tree Classifier generally performed very well with a prediction accuracy score of 0.92 (using validation data) on the full set of features against the baseline model of 0.66, which simply assumes that the highest ranked player wins. Also, by training a model specifically for a certain player, such as Novak Djokovic, it was found that prediction performance can be significantly enhanced to 99% accuracy with the Decision Tree model, compared to 84% with the baseline model, for the full dataset involving all match statistics. 
 
@@ -46,7 +46,7 @@ In the second phase, two additional methods, Random Forest and Neural Networks, 
 # Results
 I found that the strongest predictors that differentiate winners from losers include 1) Number of breakpoints lost while serving as a percentage of total serve points (on average 2.8% vs 3.7% for winners and losers, respectively), and 2) Number of first serves that resulted in a winning point as a percentage of total serve points (on average 46% vs 43% for winners and losers, respectively), based on a total of 1105 five-set matches played between 2010 and 2022.
 
-The charts below show the winning player on x-axis and losing player on y-axis. In the first chart, the percentage of breakpoints lost is skewed with the loser having a higher percentage of break points lost than the winner. Similarly, the second chart shows how the percentage of first serves won is skewed towards the winner: 
+The charts below show the winning player on x-axis and losing player on y-axis. In the first chart, the percentage of breakpoints lost is skewed with the loser having a higher percentage of break points lost than the winner. Similarly, the second chart shows how the percentage of first serve points won is skewed towards the winner: 
 
 ![bpLostPerct](https://github.com/fredrik-pettersson/Capstone-Project-Final-Report/assets/146313002/d413ee9b-c65a-4b39-ae2a-f9ef6300d003)
 
